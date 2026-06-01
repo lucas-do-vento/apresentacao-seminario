@@ -1,34 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <title>Apresentação ADS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
+<title>GitHub - Sociedade e Tecnologia</title>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 
 <style>
-    .logo {
-        width: 150px;
-        border: none;
-        background: transparent;
-    }
+:root{
+    --github-green:#2ea043;
+    --github-blue:#58a6ff;
+}
 
-    .destaque {
-        color: #4CAF50;
-        font-weight: bold;
-    }
+.reveal h1,
+.reveal h2{
+    color: var(--github-blue);
+}
 
-    footer {
-        position: absolute;
-        bottom: 10px;
-        left: 20px;
-        font-size: 18px;
-    }
+.reveal section{
+    text-align:left;
+}
+
+.reveal ul{
+    font-size: 0.9em;
+}
+
+.capa{
+    text-align:center !important;
+}
+
+.caixa{
+    background: rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    border-left:5px solid var(--github-green);
+}
+
+.destaque{
+    color:var(--github-green);
+    font-weight:bold;
+}
+
+.rodape{
+    position:fixed;
+    bottom:10px;
+    left:20px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+.reveal table{
+    width:100%;
+}
+
+.reveal th{
+    color:var(--github-blue);
+}
 </style>
-```
 
 </head>
 
@@ -37,99 +69,191 @@
 <div class="reveal">
 <div class="slides">
 
+<section class="capa">
+    <h1>GitHub</h1>
+    <h3>Colaboração, Versionamento e Tecnologia</h3>
+    <br>
+    <p>Seminário – Sociedade e Tecnologia</p>
+    <p><strong>Lucas Matias</strong></p>
+</section>
+
 <section>
-    <h1>Projeto ADS</h1>
-    <h3>Sistema de Compartilhamento de Materiais Acadêmicos</h3>
+    <h2>O que é o GitHub?</h2>
 
 ```
-<p>Lucas Matias</p>
-<p>Curso de Análise e Desenvolvimento de Sistemas</p>
+<div class="caixa">
+    <ul>
+        <li>Plataforma de hospedagem de código e arquivos na nuvem.</li>
+        <li>Utiliza o Git para controle de versões.</li>
+        <li>Permite colaboração entre desenvolvedores do mundo inteiro.</li>
+        <li>Funciona como uma rede social para programadores.</li>
+    </ul>
+</div>
 ```
 
 </section>
 
 <section>
-    <h2>Problema</h2>
+    <h2>Git x GitHub</h2>
+
+```
+<table>
+    <tr>
+        <th>Git</th>
+        <th>GitHub</th>
+    </tr>
+    <tr>
+        <td>Sistema de controle de versão</td>
+        <td>Plataforma online</td>
+    </tr>
+    <tr>
+        <td>Controla alterações</td>
+        <td>Hospeda repositórios</td>
+    </tr>
+    <tr>
+        <td>Instalado localmente</td>
+        <td>Utilizado pela internet</td>
+    </tr>
+</table>
+```
+
+</section>
+
+<section>
+    <h2>Controle de Versão</h2>
+
+```
+<ul>
+    <li>Armazena todo o histórico do projeto.</li>
+    <li>Permite recuperar versões anteriores.</li>
+    <li>Evita perda de trabalho.</li>
+    <li>Facilita a colaboração entre equipes.</li>
+</ul>
+```
+
+</section>
+
+<section>
+    <h2>Branches</h2>
+
+```
+<div class="caixa">
+    <p>
+        Branches são ramificações do projeto que permitem criar
+        novas funcionalidades sem afetar a versão principal.
+    </p>
+
+    <p class="destaque">
+        Main → Nova Branch → Testes → Integração
+    </p>
+</div>
+```
+
+</section>
+
+<section>
+    <h2>Fork e Colaboração</h2>
+
+```
+<ul>
+    <li>Fork cria uma cópia de um projeto.</li>
+    <li>Permite contribuir em projetos de terceiros.</li>
+    <li>Facilita o desenvolvimento open source.</li>
+    <li>Estimula o aprendizado colaborativo.</li>
+</ul>
+```
+
+</section>
+
+<section>
+    <h2>Pull Requests</h2>
+
+```
+<ul>
+    <li>Proposta de alteração em um projeto.</li>
+    <li>Permite revisão de código.</li>
+    <li>Recebe sugestões de melhorias.</li>
+    <li>Somente alterações aprovadas são integradas.</li>
+</ul>
+```
+
+</section>
+
+<section>
+    <h2>Organização de Projetos</h2>
+
+```
+<ul>
+    <li><strong>Issues:</strong> tarefas, bugs e ideias.</li>
+    <li><strong>Projects:</strong> organização estilo Kanban.</li>
+    <li><strong>Wiki:</strong> documentação do projeto.</li>
+    <li><strong>README:</strong> apresentação e instruções.</li>
+</ul>
+```
+
+</section>
+
+<section>
+    <h2>GitHub Pages</h2>
+
+```
+<div class="caixa">
+    <ul>
+        <li>Hospedagem gratuita de sites.</li>
+        <li>Ideal para portfólios.</li>
+        <li>Permite publicar documentação.</li>
+        <li>Transforma projetos em páginas públicas.</li>
+    </ul>
+</div>
+
+<p class="destaque">
+    Esta apresentação está hospedada usando GitHub Pages.
+</p>
+```
+
+</section>
+
+<section>
+    <h2>Termos Importantes</h2>
+
+```
+<ul>
+    <li><strong>Repository:</strong> local onde o projeto fica armazenado.</li>
+    <li><strong>Commit:</strong> salvamento de alterações.</li>
+    <li><strong>Branch:</strong> versão paralela do projeto.</li>
+    <li><strong>Pull Request:</strong> solicitação de integração.</li>
+</ul>
+```
+
+</section>
+
+<section>
+    <h2>GitHub Além da Programação</h2>
+
+```
+<ul>
+    <li>Organização de documentos.</li>
+    <li>Controle de trabalhos acadêmicos.</li>
+    <li>Projetos colaborativos.</li>
+    <li>Registro do histórico de alterações.</li>
+</ul>
+```
+
+</section>
+
+<section class="capa">
+    <h1>Conclusão</h1>
 
 ```
 <p>
-    Muitos estudantes têm dificuldade para encontrar materiais de estudo
-    organizados e confiáveis.
+    O GitHub é muito mais do que uma plataforma para programadores.
+    Ele é uma ferramenta de colaboração, organização,
+    compartilhamento de conhecimento e construção profissional.
 </p>
-```
 
-</section>
+<br>
 
-<section>
-    <h2>Objetivos</h2>
-
-```
-<ul>
-    <li>Criar uma plataforma colaborativa</li>
-    <li>Compartilhar PDFs e vídeos</li>
-    <li>Facilitar o acesso ao conhecimento</li>
-    <li>Melhorar a experiência dos estudantes</li>
-</ul>
-```
-
-</section>
-
-<section>
-    <h2>Tecnologias Utilizadas</h2>
-
-```
-<ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>MySQL</li>
-    <li>GitHub</li>
-</ul>
-```
-
-</section>
-
-<section>
-    <h2>Protótipo</h2>
-
-```
-<img src="https://via.placeholder.com/800x400"
-     alt="Protótipo">
-```
-
-</section>
-
-<section>
-    <h2>Benefícios</h2>
-
-```
-<ul>
-    <li>Acesso rápido aos materiais</li>
-    <li>Comunidade colaborativa</li>
-    <li>Organização por disciplinas</li>
-    <li>Maior produtividade acadêmica</li>
-</ul>
-```
-
-</section>
-
-<section>
-    <h2>Conclusão</h2>
-
-```
-<p class="destaque">
-    A plataforma pode contribuir para melhorar o aprendizado
-    e a troca de conhecimento entre estudantes.
-</p>
-```
-
-</section>
-
-<section>
-    <h1>Obrigado!</h1>
-
-```
-<p>Dúvidas?</p>
+<h3>Obrigado!</h3>
 ```
 
 </section>
@@ -140,11 +264,13 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
 
 <script>
-    Reveal.initialize({
-        hash: true,
-        slideNumber: true,
-        transition: 'slide'
-    });
+Reveal.initialize({
+    hash:true,
+    slideNumber:true,
+    transition:"slide",
+    controls:true,
+    progress:true
+});
 </script>
 
 </body>
