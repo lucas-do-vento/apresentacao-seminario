@@ -168,97 +168,98 @@
 </section>
 
 <section>
-    <h2>Branches</h2>
-
-
-<div class="caixa">
-    <p>
-        Branches são ramificações do projeto que permitem criar
-        novas funcionalidades sem afetar a versão principal.
-    </p>
-
-    <p class="destaque">
-        Main → Nova Branch → Testes → Integração
-    </p>
-</div>
-
-
-
-</section>
-
-<section>
-    <h2>Fork e Colaboração</h2>
-
-
-<ul>
-    <li>Fork cria uma cópia de um projeto.</li>
-    <li>Permite contribuir em projetos de terceiros.</li>
-    <li>Facilita o desenvolvimento open source.</li>
-    <li>Estimula o aprendizado colaborativo.</li>
-</ul>
-
-
-</section>
-<section class="capa">
-    <img src="repositorio_compartilhado.png"
-         alt="repositorio_compartilhado"
-         style="max-width:90%; max-height:80vh;">
-</section>
-<section>
-    <h2>Pull Requests</h2>
-
-
-<ul>
-    <li>Proposta de alteração em um projeto.</li>
-    <li>Permite revisão de código.</li>
-    <li>Recebe sugestões de melhorias.</li>
-    <li>Somente alterações aprovadas são integradas.</li>
-</ul>
-
-
-</section>
-<section class="capa">
-    <img src="fork_pull.png"
-         alt="fork_pull"
-         style="max-width:90%; max-height:80vh;">
-</section>
-<section>
-    <h2>Organização de Projetos</h2>
-
-
-<ul>
-    <li><strong>Issues:</strong> tarefas, bugs e ideias.</li>
-    <li><strong>Projects:</strong> organização estilo Kanban.</li>
-    <li><strong>Wiki:</strong> documentação do projeto.</li>
-    <li><strong>README:</strong> apresentação e instruções.</li>
-</ul>
-
-
-</section>
-<section class="capa">
-    <img src="print_readme.png"
-         alt="print_readme"
-         style="max-width:90%; max-height:80vh;">
-</section>	
-
-<section>
-    <h2>GitHub Pages</h2>
-
+    <h2>Git: Origem e Funcionamento Técnico </h2>
 
 <div class="caixa">
     <ul>
-        <li>Hospedagem gratuita de sites.</li>
-        <li>Ideal para portfólios.</li>
-        <li>Permite publicar documentação.</li>
-        <li>Transforma projetos em páginas públicas.</li>
+        <li>O Git é um sistema de controle de versão distribuído, criado em 2005 pelo 
+			programador Linus Torvalds (criador do Linux). Na época, o Linux mantinha 
+			seu código no BitKeeper, mas após a revogação do acesso gratuito surgiu a 
+			necessidade de uma alternativa livre. Linus projetou então o Git em poucos 
+			dias, priorizando velocidade, design simples e suporte eficiente a 
+			desenvolvimento não-linear (múltiplos branches).</li>
     </ul>
 </div>
 
-<p class="destaque">
-    Esta apresentação está hospedada usando GitHub Pages.
-</p>
+
+</section>
+
+<section>
+<div class="caixa">
+    <ul>
+        <li>O Git nasceu para atender às necessidades do desenvolvimento do kernel Linux, 
+			substituindo o BitKeeper e permitindo versionamento totalmente distribuído e de 
+			código-aberto. As metas iniciais eram: alto desempenho, flexibilidade de branches 
+			e repositórios autônomos. Desde então o Git evoluiu para se tornar padrão global 
+			no versionamento de código aberto.</li>
+    </ul>
+</div>
+</section>
+<section>
+    <h2>Conceitos fundamentais: </h2>
+
+<div class="caixa">
+    <ul>
+        <li>Commit (snapshots): Cada commit registra o estado do projeto em determinado 
+			momento (um “salvamento” no histórico). O Git armazena objetos que representam 
+			o conteúdo e metadados, preservando integridade pelo uso de hashes. </li>
+    </ul>
+</div>
 
 
+</section>
+<section>
+<div class="caixa">
+    <ul>
+        <li>Branch (ramificação): Um branch no Git é uma linha de desenvolvimento paralela. 
+			Tecnicamente, um branch é um ponteiro móvel para commits sequenciais. Usar 
+			branches permite que desenvolvedores “testem coisas novas” isoladamente, sem 
+			afetar o ramo principal (geralmente chamado main ou master). Quando as mudanças 
+			estão prontas, faz-se um merge (união) ou uma pull request no caso de colaboração 
+			por repositório remoto.</li>
+    </ul>
+</div>
+</section>
+<section>
+<div class="caixa">
+    <ul>
+        <li>Merge (mesclagem): O Git permite unir dois branches, combinando históricos de 
+			desenvolvimento. Seu algoritmo inteligente minimiza conflitos e preserva um 
+			histórico acíclico. Em caso de conflito, o Git sinaliza trechos a serem 
+			ajustados manualmente. </li>
+    </ul>
+</div>
+</section>
+<section>
+<div class="caixa">
+    <ul>
+        <li>Repositório (repo) e Clonagem: Um repositório Git é o conjunto de diretórios e 
+			arquivos versionados junto com o histórico. Cada clone de um repositório contém 
+			TODO o histórico de versões, diferentemente de sistemas centralizados que apenas 
+			fornecem a versão mais recente. Assim, o Git permite operações offline e não 
+			depende da conexão permanente com um servidor.</li>
+    </ul>
+</div>
+</section>
+<section>
+<div class="caixa">
+    <ul>
+        <li>A capacidade de múltiplos branches e a duplicação local do repositório foram 
+			motivadores-chaves para sua adoção. Após sua criação, o Git foi rapidamente 
+			adotado por muitos projetos além do Linux, tornando-se uma “ferramenta padrão” 
+			de versionamento.</li>
+    </ul>
+</div>
+</section>	
+
+<section>
+<div class="caixa">
+    <ul>
+        <li>Em resumo, o Git trouxe à tona um modelo descentralizado de versionamento, 
+			permitindo que equipes colaborem sem risco de “perder tudo” e com grande 
+			flexibilidade de desenvolvimento paralelo.</li>
+    </ul>
+</div>
 </section>
 
 <section>
