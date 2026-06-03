@@ -70,21 +70,21 @@
 }
 
 .reveal h1{
-    font-size: 1.8em;
+    font-size: 2.2em;
 }
 
 .reveal h2{
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 .reveal h3{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .reveal p,
 .reveal li{
-    font-size: 0.75em;
-    line-height: 1.4;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
 .reveal ul{
@@ -111,28 +111,23 @@
 
 <section class="capa">
     <h1>GitHub</h1>
-    <img src="GitHub.jpg.jpeg"
-     alt="GitHub"
-     width="200"
-     style="margin:20px 0;">
-    <h3>Origem e Funcionalidade</h3>
+    <h3>Colaboração, Versionamento e Tecnologia</h3>
+    <br>
     <p>Seminário – Sociedade e Tecnologia</p>
     <p><strong>Autores:</strong></p>
     <p>Lucas • Giovanna • Rafael</p>
 </section>
 
 <section>
-    <h2>Introdução ao Controle de Versão e Timeline Histórica</h2>
+    <h2>O que é o GitHub?</h2>
 
 
 <div class="caixa">
     <ul>
-        <li>Controle de versão (VCS) é o registro histórico de alterações em arquivos, 
-			permitindo recuperar estados anteriores e colaborar com segurança. Desde 
-			os anos 1970 diversas ferramentas surgiram: inicialmente sistemas locais 
-			como o SCCS (1972) e RCS (1982) mantinham apenas cópias com código-fonte 
-			antigo; depois, sistemas centralizados como CVS (década de 1990) e Subversion 
-			(2000) introduziram um servidor único com histórico de versões compartilhado. </li>
+        <li>Plataforma de hospedagem de código e arquivos na nuvem.</li>
+        <li>Utiliza o Git para controle de versões.</li>
+        <li>Permite colaboração entre desenvolvedores do mundo inteiro.</li>
+        <li>Funciona como uma rede social para programadores.</li>
     </ul>
 </div>
 
@@ -140,301 +135,170 @@
 </section>
 
 <section>
+    <h2>Git x GitHub</h2>
+
+
+<table>
+    <tr>
+        <th>Git</th>
+        <th>GitHub</th>
+    </tr>
+    <tr>
+        <td>Sistema de controle de versão</td>
+        <td>Plataforma online</td>
+    </tr>
+    <tr>
+        <td>Controla alterações</td>
+        <td>Hospeda repositórios</td>
+    </tr>
+    <tr>
+        <td>Instalado localmente</td>
+        <td>Utilizado pela internet</td>
+    </tr>
+</table>
+
+
+</section>
+
+<section>
+    <h2>Controle de Versão</h2>
+
+
+<ul>
+    <li>Armazena todo o histórico do projeto.</li>
+    <li>Permite recuperar versões anteriores.</li>
+    <li>Evita perda de trabalho.</li>
+    <li>Facilita a colaboração entre equipes.</li>
+</ul>
+
+
+</section>
+
+<section>
+    <h2>Branches</h2>
+
+
 <div class="caixa">
-    <ul>
-        <li>Apesar dos avanços, ambos os modelos anteriores tinham limitações de 
-			escalabilidade e de ponto único de falha. Em 2005 surgiu então o sistema 
-			distribuído de controle de versão (DVCS): no DVCS (como Git, Mercurial, 
-			Bazaar etc.), cada usuário baixa todo o histórico do projeto para sua máquina, 
-			tornando cada clone um backup completo. Isso garante colaboração contínua 
-			mesmo se o servidor central cair.</li>
-    </ul>
+    <p>
+        Branches são ramificações do projeto que permitem criar
+        novas funcionalidades sem afetar a versão principal.
+    </p>
+
+    <p class="destaque">
+        Main → Nova Branch → Testes → Integração
+    </p>
 </div>
 
 
 </section>
 
 <section>
-<div class="caixa">
-    <ul>
-        <li>A motivação para criar o Git, estava ligada à experiência de desenvolvimento 
-			do Linux; já o GitHub nasceu para facilitar o uso do Git em equipe, adicionando 
-			recursos sociais (versionamento aberto, compartilhamento de código, revisões). 
-			Ambos se tornaram peças centrais na cultura de desenvolvimento de software.</li>
-    </ul>
-</div>
+    <h2>Fork e Colaboração</h2>
+
+
+<ul>
+    <li>Fork cria uma cópia de um projeto.</li>
+    <li>Permite contribuir em projetos de terceiros.</li>
+    <li>Facilita o desenvolvimento open source.</li>
+    <li>Estimula o aprendizado colaborativo.</li>
+</ul>
 
 
 </section>
 
 <section>
-    <h2>Git: Origem e Funcionamento Técnico 
-		<img src="git.png"
-             alt="Git"
-             width="100"
-             style="vertical-align: middle; margin-left: 10px;">
-	</h2>
+    <h2>Pull Requests</h2>
 
-<div class="caixa">
-    <ul>
-        <li>O Git é um sistema de controle de versão distribuído, criado em 2005 pelo 
-			programador Linus Torvalds (criador do Linux). Na época, o Linux mantinha 
-			seu código no BitKeeper, mas após a revogação do acesso gratuito surgiu a 
-			necessidade de uma alternativa livre. Linus projetou então o Git em poucos 
-			dias, priorizando velocidade, design simples e suporte eficiente a 
-			desenvolvimento não-linear (múltiplos branches).</li>
-    </ul>
-</div>
+
+<ul>
+    <li>Proposta de alteração em um projeto.</li>
+    <li>Permite revisão de código.</li>
+    <li>Recebe sugestões de melhorias.</li>
+    <li>Somente alterações aprovadas são integradas.</li>
+</ul>
 
 
 </section>
 
 <section>
-<div class="caixa">
-    <ul>
-        <li>O Git nasceu para atender às necessidades do desenvolvimento do kernel Linux, 
-			substituindo o BitKeeper e permitindo versionamento totalmente distribuído e de 
-			código-aberto. As metas iniciais eram: alto desempenho, flexibilidade de branches 
-			e repositórios autônomos. Desde então o Git evoluiu para se tornar padrão global 
-			no versionamento de código aberto.</li>
-    </ul>
-</div>
+    <h2>Organização de Projetos</h2>
+
+
+<ul>
+    <li><strong>Issues:</strong> tarefas, bugs e ideias.</li>
+    <li><strong>Projects:</strong> organização estilo Kanban.</li>
+    <li><strong>Wiki:</strong> documentação do projeto.</li>
+    <li><strong>README:</strong> apresentação e instruções.</li>
+</ul>
+
+
 </section>
+
 <section>
-    <h2>Conceitos fundamentais: </h2>
+    <h2>GitHub Pages</h2>
+
 
 <div class="caixa">
     <ul>
-        <li>Commit (snapshots): Cada commit registra o estado do projeto em determinado 
-			momento (um “salvamento” no histórico). O Git armazena objetos que representam 
-			o conteúdo e metadados, preservando integridade pelo uso de hashes. </li>
-		<img src="controle_versoes.png" 
-			 alt="controle_versoes" 
-			 width="300">
+        <li>Hospedagem gratuita de sites.</li>
+        <li>Ideal para portfólios.</li>
+        <li>Permite publicar documentação.</li>
+        <li>Transforma projetos em páginas públicas.</li>
     </ul>
 </div>
 
+<p class="destaque">
+    Esta apresentação está hospedada usando GitHub Pages.
+</p>
+
 
 </section>
+
 <section>
-<div class="caixa">
-    <ul>
-        <li>Branch (ramificação): Um branch no Git é uma linha de desenvolvimento paralela. 
-			Tecnicamente, um branch é um ponteiro móvel para commits sequenciais. Usar 
-			branches permite que desenvolvedores “testem coisas novas” isoladamente, sem 
-			afetar o ramo principal (geralmente chamado main ou master). Quando as mudanças 
-			estão prontas, faz-se um merge (união) ou uma pull request no caso de colaboração 
-			por repositório remoto.</li>
-	
-    </ul>
-</div>
+    <h2>Termos Importantes</h2>
+
+
+<ul>
+    <li><strong>Repository:</strong> local onde o projeto fica armazenado.</li>
+    <li><strong>Commit:</strong> salvamento de alterações.</li>
+    <li><strong>Branch:</strong> versão paralela do projeto.</li>
+    <li><strong>Pull Request:</strong> solicitação de integração.</li>
+</ul>
+
+
 </section>
+
+<section>
+    <h2>GitHub Além da Programação</h2>
+
+
+<ul>
+    <li>Organização de documentos.</li>
+    <li>Controle de trabalhos acadêmicos.</li>
+    <li>Projetos colaborativos.</li>
+    <li>Registro do histórico de alterações.</li>
+</ul>
+
+
+</section>
+
 <section class="capa">
-    <img src="commit_aponta_pais.png"
-         alt="commit_aponta_pais"
-         style="max-width:90%; max-height:80vh;">
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Merge (mesclagem): O Git permite unir dois branches, combinando históricos de 
-			desenvolvimento. Seu algoritmo inteligente minimiza conflitos e preserva um 
-			histórico acíclico. Em caso de conflito, o Git sinaliza trechos a serem 
-			ajustados manualmente. </li>
-    </ul>
-</div>
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Repositório (repo) e Clonagem: Um repositório Git é o conjunto de diretórios e 
-			arquivos versionados junto com o histórico. Cada clone de um repositório contém 
-			TODO o histórico de versões, diferentemente de sistemas centralizados que apenas 
-			fornecem a versão mais recente. Assim, o Git permite operações offline e não 
-			depende da conexão permanente com um servidor.</li>
-    </ul>
-</div>
-</section>
-<section class="capa">
-    <img src="como_git_guarda_versoes.png"
-         alt="como_git_guarda_versoes"
-         style="max-width:90%; max-height:80vh;">
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>A capacidade de múltiplos branches e a duplicação local do repositório foram 
-			motivadores-chaves para sua adoção. Após sua criação, o Git foi rapidamente 
-			adotado por muitos projetos além do Linux, tornando-se uma “ferramenta padrão” 
-			de versionamento.</li>
-    </ul>
-</div>
-</section>	
+    <h1>Conclusão</h1>
 
-<section>
-<div class="caixa">
-    <ul>
-        <li>Em resumo, o Git trouxe à tona um modelo descentralizado de versionamento, 
-			permitindo que equipes colaborem sem risco de “perder tudo” e com grande 
-			flexibilidade de desenvolvimento paralelo.</li>
-    </ul>
-</div>
-</section>
 
-<section>
-    <h2>GitHub: Plataforma Social de Hospedagem Git </h2>
+<p>
+    O GitHub é muito mais do que uma plataforma para programadores.
+    Ele é uma ferramenta de colaboração, organização,
+    compartilhamento de conhecimento e construção profissional.
+</p>
 
-<div class="caixa">
-    <ul>
-        <li>O GitHub é um serviço online fundado em 2008 com o objetivo de hospedar 
-			repositórios Git e facilitar a colaboração. Desenvolvido inicialmente em Ruby 
-			on Rails pelos engenheiros Tom Preston-Werner, Chris Wanstrath, PJ Hyett e Scott 
-			Chacon, o GitHub tornou-se rapidamente o principal ponto de encontro de 
-			desenvolvedores. Desde seu lançamento em abril de 2008, a plataforma cresceu 
-			exponencialmente. Em 2018 o GitHub foi adquirido pela Microsoft por US$7,5 bilhões, 
-			mas continuou operando de forma autônoma.</li>
-    </ul>
-</div>
+<br>
+
+<h3>Obrigado!</h3>
 
 
 </section>
 
-<section>
-<div class="caixa">
-    <ul>
-        <li>Segundo a própria definição, o GitHub é “uma plataforma de hospedagem de 
-			código-fonte e arquivos com controle de versão usando o Git”. Na prática, 
-			ele funciona como rede social para desenvolvedores, permitindo que programadores 
-			de qualquer lugar publiquem seus projetos públicos, colaborem em equipe e 
-			acompanhem projetos alheios (via “fork” e “pull request”).</li>
-		<img src="fork_pull.png" 
-			 alt="fork_pull" 
-			 width="400">
-    </ul>
-</div>
-
-
-</section>
-
-<section>
-	<h2>Principais funcionalidades e benefícios do GitHub: </h2>
-
- <div class="caixa">
-    <ul>
-        <li>Repositórios Remotos e Forks: GitHub hospeda repositórios na nuvem, acessíveis 
-			via navegador ou Git. Qualquer usuário pode “dar fork” em um repositório existente, 
-			criando sua cópia independente para experimentação sem afetar o projeto original. </li>
-    </ul>
-</div>
-
-
-</section>
-
-<section>
-<div class="caixa">
-    <ul>
-        <li>Issue Tracker: Cada repositório tem um sistema de issues (problemas) para 
-			relatar bugs, novas funcionalidades ou dúvidas. Isso organiza o trabalho em 
-			andamento e documenta o progresso. </li>
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Pull Requests e Revisão de Código: Após fazer alterações em um fork ou branch, 
-			desenvolvedores podem abrir pull requests, solicitando que suas mudanças sejam 
-			revisadas e incorporadas ao projeto principal. Ferramentas integradas permitem 
-			discutir cada alteração, comentar linhas específicas e controlar a qualidade 
-			antes do merge.</li>
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Integração Contínua (CI/CD) – GitHub Actions é um mecanismo embutido que executa 
-			tarefas automatizadas (testes, builds, deploy) sempre que há novas alterações. 
-			Isso permite integração contínua onde o código é automaticamente testado e 
-			implantado conforme o desenvolvimento avança.</li>
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Documentação e Wikis: Cada repositório pode incluir páginas de documentação 
-			(por exemplo, README) ou até wikis colaborativas, facilitando a criação de 
-			portfólios técnicos e guias de uso. </li>
-		<img src="print_readme.png" 
-			 alt="print_readme" 
-			 width="500">
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Comunidade e Aprendizado: GitHub incentiva colaborações públicas: projetos de 
-			código aberto recebem contribuições de diversas pessoas. Além disso, a 
-			plataforma incentiva “networking” entre desenvolvedores, tendo sido descrita 
-			como um “portfólio global do programador”. Há recursos para perfis pessoais, 
-			seguidores e recomendações de projetos.</li>
-		<img src="home_giovanna.png" 
-			 alt="home_giovanna" 
-			 width="500">
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>Em todos esses aspectos, o GitHub se beneficia de ter o Git como base (garantindo 
-			histórico e ramificações poderosas) e adiciona a ele uma camada de colaboração 
-			humana e operacional.</li>
-    </ul>
-</div>
-
-
-</section>
-<section>
-	<h2>Git vs. GitHub</h2>
-	<h3>Como resumo, podemos distinguir Git e GitHub em termos de função e uso: </h3>
-
- <div class="caixa">
-    <ul>
-        <li>Git é a ferramenta de controle de versão: um software instalado localmente que 
-			gerencia histórico de código (commits, branches, merges etc.). Ele funciona 
-			offline e não depende de serviços externos.</li>
-    </ul>
-</div>
-
-
-</section>
-<section>
-<div class="caixa">
-    <ul>
-        <li>GitHub é um serviço on-line baseado no Git: armazena repositórios Git na 
-			nuvem, fornece interface web, colaboração social e recursos adicionais 
-			(issues, pull requests, Actions, etc.).</li>
-		<li>Em outras palavras, pode-se pensar que Git é o mecanismo subjacente que 
-			rastreia mudanças nos arquivos, enquanto GitHub responde é a plataforma que 
-			hospeda projetos que usam Git e facilita interações sociais.</li>
-    </ul>
-</div>
-
-
-</section>
 </div>
 </div>
 
